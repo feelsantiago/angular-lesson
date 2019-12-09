@@ -1,0 +1,19 @@
+div {
+	display: flex;
+	justify-content: center;
+	background: #ccc;
+
+	:hover {
+		cursor: pointer;
+	}
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+li {
+	margin: 10px;
+}

@@ -1,0 +1,7 @@
+<div>
+	<ul>
+		<li *ngFor="let item of items">
+			<menu-item-app [active]="isActive(item.text)" [text]="item.text" (click)="onClickHandle(item.text)"></menu-item-app>
+		</li>
+	</ul>
+</div>
