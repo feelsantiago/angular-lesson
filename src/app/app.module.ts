@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { ItemService } from './services/item.service';
 import { BagComponent } from './bag/bag.component';
 import { BagItemComponent } from './bag/bag-item/bag-item.component';
 import { BagService } from './services/bag.service';
+import { SearchService } from './services/search.service';
 
 @NgModule({
 	declarations: [
@@ -25,8 +27,8 @@ import { BagService } from './services/bag.service';
 		BagComponent,
 		BagItemComponent
 	],
-	imports: [ BrowserModule, AppRoutingModule ],
-	providers: [ MenuService, ItemService, BagService ],
+	imports: [ BrowserModule, AppRoutingModule, FormsModule ],
+	providers: [ MenuService, ItemService, BagService, SearchService ],
 	bootstrap: [ AppComponent ]
 })
 export class AppModule {}
