@@ -1,0 +1,13 @@
+div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description p,
+.actions p {
+	padding: 5px 10px;
+}
+
+.actions:hover {
+	cursor: pointer;
+}

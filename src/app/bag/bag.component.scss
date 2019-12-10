@@ -18,15 +18,9 @@ div {
 
 	li {
 		display: flex;
-		justify-content: space-between;
-
-		div {
-			display: flex;
-		}
-
-		.description p,
-		.actions p {
-			padding: 5px 10px;
-		}
 	}
+}
+
+bag-item-app {
+	width: 100%;
 }

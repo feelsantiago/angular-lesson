@@ -1,18 +1,11 @@
 <div>
 	<h3>Your Bag</h3>
-	<ul>
-		<li>
-			<div class="description">
-				<p>2x</p>
-				<p>Name</p>
-			</div>
-			<div class="actions">
-				<p>+</p>
-				<p>-</p>
-			</div>
+	<ul *ngIf="bagItems.length > 0">
+		<li *ngFor="let item of bagItems">
+			<bag-item-app [quantity]="item.quantity" [title]="item.item.title" [id]="item.item.id"></bag-item-app>
 		</li>
 	</ul>
 	<hr>
-	<p>Total: <span>R$ 50</span></p>
+	<p>Total: <span>{{ total | currency: 'BRL'}}</span></p>
 	<button>Proceed to Checkout</button>
 </div>

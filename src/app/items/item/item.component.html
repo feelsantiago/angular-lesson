@@ -5,7 +5,7 @@
 		<p>{{ cuisine }}</p>
 		<div class="price">
 			<p>{{ price | currency: 'BRL' }}</p>
-			<button>add to bag</button>
+			<button (click)="onHandleClick(id, title, cuisine, price)">add to bag</button>
 		</div>
 	</div>
 </div>

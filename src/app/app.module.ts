@@ -11,6 +11,8 @@ import { ItemListComponent } from './items/item-list.component';
 import { ItemComponent } from './items/item/item.component';
 import { ItemService } from './services/item.service';
 import { BagComponent } from './bag/bag.component';
+import { BagItemComponent } from './bag/bag-item/bag-item.component';
+import { BagService } from './services/bag.service';
 
 @NgModule({
 	declarations: [
@@ -20,10 +22,11 @@ import { BagComponent } from './bag/bag.component';
 		MenuItemComponent,
 		ItemListComponent,
 		ItemComponent,
-		BagComponent
+		BagComponent,
+		BagItemComponent
 	],
 	imports: [ BrowserModule, AppRoutingModule ],
-	providers: [ MenuService, ItemService ],
+	providers: [ MenuService, ItemService, BagService ],
 	bootstrap: [ AppComponent ]
 })
 export class AppModule {}
