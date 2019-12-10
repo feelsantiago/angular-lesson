@@ -25,5 +25,6 @@ export class MenuComponent implements OnInit {
 
 	onClickHandle (item: string) {
 		this.itemSelected = item;
+		this.menuService.getSubject.next(item);
 	}
 }

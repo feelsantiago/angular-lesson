@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 export interface IMenu {
 	img: string;
@@ -34,7 +35,17 @@ export class MenuService {
 		}
 	];
 
+	private readonly menuSubject: Subject<string>;
+
+	constructor () {
+		this.menuSubject = new Subject();
+	}
+
 	get menuItems () {
 		return this.menu;
+	}
+
+	get getSubject () {
+		return this.menuSubject;
 	}
 }
