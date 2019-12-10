@@ -10,9 +10,18 @@ import { MenuService } from './services/menu.service';
 import { ItemListComponent } from './items/item-list.component';
 import { ItemComponent } from './items/item/item.component';
 import { ItemService } from './services/item.service';
+import { BagComponent } from './bag/bag.component';
 
 @NgModule({
-	declarations: [ AppComponent, HeaderComponent, MenuComponent, MenuItemComponent, ItemListComponent, ItemComponent ],
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		MenuComponent,
+		MenuItemComponent,
+		ItemListComponent,
+		ItemComponent,
+		BagComponent
+	],
 	imports: [ BrowserModule, AppRoutingModule ],
 	providers: [ MenuService, ItemService ],
 	bootstrap: [ AppComponent ]
