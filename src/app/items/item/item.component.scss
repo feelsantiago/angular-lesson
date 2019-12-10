@@ -1,1 +1,25 @@
+.card {
+	display: flex;
+	padding: 10px;
+	border: 1px solid black;
+}
 
+.img {
+	height: 100px;
+	width: 100px;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+div {
+	width: 80%;
+}
+
+.price {
+	display: flex;
+	justify-content: space-between;
+
+	button {
+		padding: 5px;
+	}
+}

@@ -1,1 +1,11 @@
-<h1>text</h1>
+<div class="card">
+	<div class="img"></div>
+	<div>
+		<h3>{{ title }}</h3>
+		<p>{{ cuisine }}</p>
+		<div class="price">
+			<p>{{ price | currency: 'BRL' }}</p>
+			<button>add to bag</button>
+		</div>
+	</div>
+</div>

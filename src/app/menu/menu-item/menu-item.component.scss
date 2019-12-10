@@ -11,6 +11,12 @@
 	}
 }
 
+p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .active::after {
 	content: '';
 	display: block;
